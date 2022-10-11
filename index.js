@@ -29,8 +29,8 @@ async function scrapCESTs() {
         let count = 0;
         $(this).find('p').each(function (i) {
           let temp = $(this).text().trim();
-          if (!isNaN(temp.replaceAll('.', '').replaceAll(' ', ''))) {
-            temp = temp.replaceAll('.', '').replaceAll(' ', ';');
+          if (!isNaN(temp.replaceAll('.', '').replaceAll(',', '').replaceAll(' ', ''))) {
+            temp = temp.replaceAll('.', '').replaceAll(',', '').replaceAll(' ', ';');
           }
           if (temp) {
             if (count > 0) { temp = ';' + temp; }
@@ -49,7 +49,7 @@ async function scrapCESTs() {
   });
 
   list.map((line) => {
-    fs.appendFileSync('/d/cest.txt', line + `\n`);
+    fs.appendFileSync('/d/CEST.txt', line + `\n`);
   });
 
   return cestsAmount;
