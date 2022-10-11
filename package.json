@@ -1,0 +1,19 @@
+{
+  "name": "cest-scraper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maicobpp/cest-scraper.git"
+  },
+  "author": "maicobeppler@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^18.2.1"
+  }
+}
