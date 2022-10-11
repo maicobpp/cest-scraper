@@ -7,6 +7,7 @@ console.log('Starting scraping CESTs');
 scrapCESTs().then((amount) => {
   console.log(`Job Done! ${amount} were found`);
   console.log(`Don't forget to search for "Capítulos" and check them out!`);
+  console.log(`Before upload, conver file to ANSI`);
 });
 
 async function scrapCESTs() {
