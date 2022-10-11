@@ -6,6 +6,7 @@ console.log('Starting scraping CESTs');
 
 scrapCESTs().then((amount) => {
   console.log(`Job Done! ${amount} were found`);
+  console.log(`Don't forget to search for "Capítulos" and check them out!`);
 });
 
 async function scrapCESTs() {
